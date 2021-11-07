@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Spicy+Rice);
+HTML,
+BODY {
+    height: 100%;
+}
+
+BODY {
+    background: radial-gradient( circle at 2.875rem, rgba(255, 255, 255, 0) 25.5%, rgba(255, 255, 255, 0.2) 25.5%, rgba(255, 255, 255, 0.2) 28.5%, rgba(255, 255, 255, 0) 28.5%) 0 0, radial-gradient( circle at -0.575rem, rgba(255, 255, 255, 0) 25.5%, rgba(255, 255, 255, 0.2) 25.5%, rgba(255, 255, 255, 0.2) 28.5%, rgba(255, 255, 255, 0) 28.5%) 0 1.15rem, radial-gradient( circle at 2.875rem, rgba(255, 255, 255, 0) 25.5%, rgba(255, 255, 255, 0.2) 25.5%, rgba(255, 255, 255, 0.2) 28.5%, rgba(255, 255, 255, 0) 28.5%) 0.575rem 0, radial-gradient( circle at -0.575rem, rgba(255, 255, 255, 0) 25.5%, rgba(255, 255, 255, 0.2) 25.5%, rgba(255, 255, 255, 0.2) 28.5%, rgba(255, 255, 255, 0) 28.5%) 0.575rem 1.15rem, radial-gradient( circle at 2.875rem, rgba(255, 255, 255, 0) 25.5%, rgba(255, 255, 255, 0.2) 25.5%, rgba(255, 255, 255, 0.2) 28.5%, rgba(255, 255, 255, 0) 28.5%) 1.15rem 0, radial-gradient( circle at -0.575rem, rgba(255, 255, 255, 0) 25.5%, rgba(255, 255, 255, 0.2) 25.5%, rgba(255, 255, 255, 0.2) 28.5%, rgba(255, 255, 255, 0) 28.5%) 1.15rem 1.15rem, radial-gradient( circle at 2.875rem, rgba(255, 255, 255, 0) 25.5%, rgba(255, 255, 255, 0.2) 25.5%, rgba(255, 255, 255, 0.2) 28.5%, rgba(255, 255, 255, 0) 28.5%) 1.725rem 0, radial-gradient( circle at -0.575rem, rgba(255, 255, 255, 0) 25.5%, rgba(255, 255, 255, 0.2) 25.5%, rgba(255, 255, 255, 0.2) 28.5%, rgba(255, 255, 255, 0) 28.5%) 1.725rem 1.15rem;
+    background-size: 2.3rem 2.3rem;
+    background-color: #95d5dd;
+}
+
+H1 {
+    position: absolute;
+    margin: auto;
+    top: 1em;
+    bottom: 1em;
+    left: 1em;
+    right: 1em;
+    width: 21rem;
+    height: 12rem;
+    line-height: 12rem;
+    background-color: white;
+    text-align: center;
+    font-size: 2.2em;
+    letter-spacing: 0.05em;
+    font-family: "Spicy Rice", cursive;
+    color: #95d5dd;
+}
+
+.hello {
+    display: inline-block;
+    vertical-align: middle;
+    height: 3.2em;
+    line-height: 3.2em;
+    padding: 0 1rem;
+    background: #95d5dd;
+    border-radius: 50%;
+    color: white;
+}
+
+H1:before,
+H1:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+H1:before {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 3rem #2e8792;
+}
+
+H1:after {
+    top: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    left: -1rem;
+    background: linear-gradient(white, white) no-repeat left top, linear-gradient(white, white) no-repeat right top, linear-gradient(white, white) no-repeat left bottom, linear-gradient(white, white) no-repeat right bottom;
+    background-size: 1.15rem 1.15rem;
+}
+
+.decor:before,
+.decor:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+}
+
+.decor:before {
+    top: -1rem;
+    right: 0;
+    bottom: -1rem;
+    left: 0;
+    background: radial-gradient( circle at top, rgba(255, 255, 255, 0) 46%, white 47%) repeat-x top, radial-gradient(circle at bottom, rgba(255, 255, 255, 0) 46%, white 47%) repeat-x bottom;
+    background-size: 2.3rem 1.15rem;
+}
+
+.decor:after {
+    top: 0;
+    right: -1rem;
+    bottom: 0;
+    left: -1rem;
+    background: radial-gradient( circle at left, rgba(255, 255, 255, 0) 46%, white 47%) repeat-y left, radial-gradient(circle at right, rgba(255, 255, 255, 0) 46%, white 47%) repeat-y right;
+    background-size: 1.15rem 2.3rem;
+}
