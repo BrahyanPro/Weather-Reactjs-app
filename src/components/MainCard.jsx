@@ -1,6 +1,6 @@
-import React from "react";
-import { ctoF } from "../services/converters";
-import "./MainCard.css";
+import React from 'react';
+import { ctoF } from '../services/converters';
+import './MainCard.css';
 
 export const MainCard = ({
   city,
@@ -20,21 +20,21 @@ export const MainCard = ({
       <img
         width="150px"
         height="150px"
-        src={`/icons/${iconName}.svg`}
+        src={`./icons/${iconName}.svg`}
         alt="weatherIcon"
       />
       <h1 className="temperature">
-        {unitSystem === "metric"
+        {unitSystem === 'metric'
           ? Math.round(weatherData.main.temp)
           : Math.round(ctoF(weatherData.main.temp))}
-        °{unitSystem === "metric" ? "C" : "F"}
+        °{unitSystem === 'metric' ? 'C' : 'F'}
       </h1>
       <p>
-        Feels like{" "}
-        {unitSystem === "metric"
+        Feels like{' '}
+        {unitSystem === 'metric'
           ? Math.round(weatherData.main.feels_like)
           : Math.round(ctoF(weatherData.main.feels_like))}
-        °{unitSystem === "metric" ? "C" : "F"}
+        °{unitSystem === 'metric' ? 'C' : 'F'}
       </p>
     </div>
   );
